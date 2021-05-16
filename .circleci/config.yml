@@ -15,7 +15,7 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      - run: echo world + $MY_VAR # this env var must be set within the project
+      - run: echo world + $my_var # this env var must be set within the project
 workflows:
   # Name the workflow "welcome"
   welcome:
