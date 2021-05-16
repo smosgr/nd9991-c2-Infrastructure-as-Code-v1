@@ -17,7 +17,7 @@ jobs:
     steps:
       - run:
           $MY_VAR # this env var must be set within the project
-          command: |
+          command:
           echo $MY_ENV_VAR # this env var must be set within the project
 workflows:
   # Name the workflow "welcome"
