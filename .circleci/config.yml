@@ -16,9 +16,9 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - run:
-          $MY_VAR # this env var must be set within the project
-          command:
-          echo $MY_ENV_VAR # this env var must be set within the project
+        name: "echo an env var that is part of our project"
+        command: |
+          echo $MY_VAR # this env var must be set within the project
 workflows:
   # Name the workflow "welcome"
   welcome:
